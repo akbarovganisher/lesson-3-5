@@ -1,0 +1,442 @@
+@import url(normalize.css);
+@import url(flexboxgrid.css);
+@import url(//use.fontawesome.com/releases/v5.0.7/css/all.css);
+@font-face {
+    font-family: b-b;
+    src: url(../font/Barlow-Bold.ttf);
+}
+
+@font-face {
+    font-family: b-r;
+    src: url(../font/Barlow-Regular.ttf);
+}
+
+@font-face {
+    font-family: f-b;
+    src: url(../font/Fraunces-Black.ttf);
+}
+
+*, *::after, *::before, body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: #83888F;
+    font-family: 'f-b';
+    font-size: 24px;
+    line-height: 32px;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'b-r';
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+h1 {
+    color: #FEFCF7;
+    font-family: 'f-b';
+    font-size: 72px;
+    line-height: 72px;
+}
+
+h2 {
+    color: #333D4B;
+    font-family: 'f-b';
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h3 {
+    color: #333D4B;
+    font-family: 'f-b';
+    font-size: 24px;
+    line-height: 32px;
+    padding: 55px 0px 25px 0px;
+}
+
+.fab, .fas {
+    font-size: 25px;
+    padding-right: 25px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+header {
+    padding: 30px 0;
+}
+
+.header-nav ul {
+    float: right;
+}
+
+.header-nav li {
+    display: inline-block;
+    padding-left: 35px;
+}
+
+.header-nav ul li a {
+    color: #83888F;
+    font-family: 'b-b';
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.92px;
+    text-transform: uppercase;
+    transition: .4s all ease;
+}
+
+.header-nav ul li a:hover {
+    color: #333D4B;
+}
+
+.bars {
+    display: none;
+}
+
+.fas {
+    color: #333D4B;
+    font-size: 35px;
+    padding: 0px;
+}
+
+.nav-bg {
+    padding: 115px 85px;
+    background: url(../img/Bitmap.png) no-repeat;
+    background-size: 100% 600px;
+    border-radius: 10px;
+}
+
+.nav-h1 {
+    padding-bottom: 32px;
+}
+
+.nav-p {
+    padding-bottom: 55px;
+}
+
+.nav-p p {
+    width: 400px;
+}
+
+.nav-link a {
+    padding: 15px 32px;
+    color: #FEFCF7;
+    border-radius: 6px;
+    font-family: 'f-b';
+    font-size: 18px;
+    background-color: #0E8784;
+    transition: all ease .4s;
+}
+
+.nav-link a:hover {
+    background-color: #66D2CF;
+}
+
+main {
+    padding: 200px 0px 200px 0px;
+}
+
+.main-box {
+    padding-top: 50px;
+}
+
+.main-text h3 {
+    text-align: center;
+    color: #333D4B;
+    display: block;
+}
+
+.main-text p {
+    text-align: center;
+    display: inline-block;
+    color: #333D4B;
+    width: 255px;
+}
+
+.main-bg {
+    background: url(../img/bg1.png)no-repeat center;
+    background-position: top;
+    background-size: 90%;
+}
+
+.banner {
+    height: 920px;
+    padding-bottom: 200px;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+    line-height: 48px;
+    display: block;
+}
+
+.banner-text p {
+    color: #FEFCF7;
+    width: 527px;
+    text-align: center;
+    display: inline-block;
+    opacity: 80%;
+    padding: 30px 0px 85px 0px;
+}
+
+.banner-bg {
+    width: 100%;
+    height: 575px;
+    padding: 100px 85px 0px 85px;
+    border-radius: 10px;
+    background-color: #2c343e;
+}
+
+.banner h3 {
+    color: #FEFCF7;
+}
+
+.banner p {
+    color: #FEFCF7;
+}
+
+.banner-box {
+    padding-top: 70px;
+    height: 380px;
+    width: 350px;
+    border-radius: 8px;
+    background-color: #0E8784;
+    margin: 0 0 25px 25px;
+}
+
+.state span {
+    padding-bottom: 80px;
+}
+
+.radus-r {
+    height: 2px;
+    width: 760px;
+    position: relative;
+    left: 0;
+    top: 50px;
+    background-color: #FDD6BA;
+}
+
+.radus {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 2px solid #0E8784;
+}
+
+@media only screen and (min-width: 1px) {
+    body {
+        background-color: #bdbdb6;
+    }
+    .bars {
+        display: inline-block;
+    }
+    .header-nav {
+        display: none;
+    }
+    .header-logo img {
+        width: 262px;
+        height: 25px;
+    }
+    .nav-h1 h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .nav-p p {
+        width: 320px;
+        display: inline-block;
+    }
+    .nav-bg, p {
+        text-align: center;
+        justify-self: center;
+    }
+    .main-box {
+        display: block;
+    }
+    .banner-box {
+        height: 380px;
+        display: block;
+        padding-top: 70px;
+    }
+    .main-bg {
+        background-size: 50%;
+    }
+    .banner h3 {
+        padding: 55px 0px 25px 0px;
+    }
+    .banner-text h1 {
+        font-size: 28px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .banner-text p {
+        width: 295px;
+        text-align: center;
+    }
+    .banner-box {
+        margin: 0 0 25px 0px;
+    }
+    .banner-bg {
+        height: 970px;
+    }
+    .banner-box p {
+        width: 212px;
+        text-align: center;
+    }
+    .banner {
+        height: 1760px;
+        padding-bottom: 200px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: #d1d0d1;
+    }
+    .header-nav ul li a {
+        font-size: 16px;
+    }
+    .bars {
+        display: none;
+    }
+    .header-nav {
+        display: block;
+    }
+    .header-nav li {
+        padding-left: 24px;
+    }
+    .nav-h1 h1 {
+        line-height: 48px;
+        font-size: 48px;
+    }
+    .nav-p p {
+        display: inline-block;
+        width: 400px;
+    }
+    .nav-bg, p {
+        text-align: left;
+        justify-self: left;
+    }
+    .main-box {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .banner-box {
+        display: flex;
+        height: 180px;
+        padding: 40px 0;
+        justify-content: space-evenly;
+    }
+    .main-bg {
+        background-size: 80%;
+    }
+    .banner h3 {
+        padding: 0px 0 16px 0;
+    }
+    .banner-text h1 {
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+    }
+    .banner-text p {
+        width: 529px;
+        text-align: center;
+    }
+    .banner-box {
+        margin: 0 0 25px 0px;
+    }
+    .banner-bg {
+        height: 670px;
+    }
+    .banner-box p {
+        width: 369px;
+        text-align: left;
+    }
+    .banner {
+        height: 1130px;
+        padding-bottom: 200px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: #ffffff;
+    }
+    .header-nav {
+        display: block;
+    }
+    .header-nav ul li a {
+        font-size: 12px;
+    }
+    .header-nav li {
+        padding-left: 35px;
+    }
+    .nav-h1 h1 {
+        line-height: 72px;
+        font-size: 72px;
+    }
+    .nav-p p {
+        display: inline-block;
+        width: 400px;
+    }
+    .nav-bg, p {
+        text-align: left;
+        justify-self: left;
+    }
+    .main-box {
+        display: block;
+    }
+    .banner-box {
+        height: 380px;
+        padding-top: 70px;
+        display: block;
+    }
+    .main-bg {
+        background-size: 90%;
+    }
+    .banner h3 {
+        padding: 55px 0px 25px 0px;
+    }
+    .banner-text h1 {
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+    }
+    .banner-text p {
+        width: 527px;
+        text-align: center;
+    }
+    .banner-box {
+        margin: 0 0 25px 25px;
+    }
+    .banner-bg {
+        height: 575px;
+    }
+    .banner-box p {
+        width: 255px;
+        text-align: center;
+    }
+    .banner {
+        height: 920px;
+        padding-bottom: 200px;
+    }
+}
